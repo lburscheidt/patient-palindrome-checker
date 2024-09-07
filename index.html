@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Palindrome Checker</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://gistcdn.githack.com/lisbursch/9e2f3b4bf88d9dc3fa547e76a83bcb84/raw/cef9a1d09adb11f180e64dd44c0d2ba393ec62f0/codably-logo-dark-dark-no-bg.svg"
+        alt="Codably: Websites for humans logo"
+        class="codably-logo"
+      >
+    </header>
+    <main>
+      <div class="main">
+        <div class="main__heading">
+          <h1>Palindrome Checker</h1>
+        </div>
+        <div class="palindrome-div">
+          <label for="text-input" class="palindrome-div__heading"
+            ><h2>Enter your text to check for palindrome:</h2></label
+          >
+          <div class="palindrome-div__content">
+            <input
+              type="text"
+              id="text-input"
+              title="text-input"
+              class="palindrome-div__input"
+            ><button id="check-btn" class="palindrome-div__button">
+              Check
+            </button>
+          </div>
+
+          <div class="palindrome-div__result is-hidden" id="result"></div>
+        </div>
+        <div class="main__quote">
+          A palindrome is a word, number, phrase, or other sequence of symbols
+          that reads the same backwards as forwards, such as <em>madam</em> or
+          <em>racecar</em>, the date "22/02/2022" and the sentence: "A man, a
+          plan, a canal - Panama".
+          <a href="https://en.wikipedia.org/wiki/Palindrome">(Source)</a>
+        </div>
+      </div>
+      <footer>
+        <p>
+          &copy;
+          <!--copyright symbol-->
+          <span id="currentYear"></span>
+          <!--current year-->
+          <a href="https://gxzv3f.csb.app/" target="_blank">
+            <!--link to your website-->
+            Lisa Burscheidt</a
+          >
+        </p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

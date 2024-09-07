@@ -1,0 +1,182 @@
+:root {
+  /* colors */
+  --violet-warm-10v: #fbdcff;
+  --violet-warm-30v: #ee83ff;
+  --violet-warm-80v: #481441;
+  --green-10v: #c5ee93;
+  --green-80v: #243413;
+  --red-10v: #fde0db;
+  --red-80v: #5c1111;
+
+  /* font sizes */
+  --root-font-size: 16px;
+  font-size: var(--root-font-size);
+
+  /* font-families */
+  --font-headline: 'Open Dyslexic', 'Andika', Helvetica, Verdana, sans-serif;
+  --font-family: 'Open Dyslexic', 'Andika', Helvetica, Verdana, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: var(--violet-warm-30v);
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  min-width: 500px;
+  margin: 0;
+}
+
+.codably-logo {
+  height: 100%;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+body {
+  background-color: var(--violet-warm-80v);
+  color: var(--violet-warm-10v);
+  font-family: var(--font-family);
+}
+
+h1 {
+  margin-top: 50px;
+  line-height: 1;
+  text-align: center;
+}
+
+.main {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main__heading {
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+.main__quote {
+  width: 90%;
+  background-color: var(--violet-warm-30v);
+  color: var(--violet-warm-80v);
+  border-radius: 10px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.palindrome-div {
+  margin-top: 20px;
+  width: 60%;
+  min-width: 400px;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  text-align: center;
+  background-color: var(--violet-warm-30v);
+  color: var(--violet-warm-80v);
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0;
+}
+
+.palindrome-div__heading {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.palindrome-div__content {
+  display: inline-flex;
+  width: 80%;
+  gap: 0;
+}
+
+.palindrome-div__input {
+  background-color: var(--violet-warm-10v);
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--violet-warm-80v);
+  border: none;
+  border-bottom: 2px solid var(--violet-warm-80v);
+}
+
+.palindrome-div__input:active,
+.palindrome-div_input:focus {
+  border: none;
+  border-bottom: 2px solid var(--violet-warm-80v);
+}
+
+.palindrome-div__button {
+  cursor: pointer;
+  color: var(--violet-warm-10v);
+  background-color: var(--violet-warm-80v);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 120%;
+  padding: 10px;
+  margin-left: -10px;
+}
+
+.palindrome-div__result {
+  font-size: 1rem;
+  color: var(--violet-warm-80v);
+  background-color: var(--violet-warm-30v);
+  font-size: 16px;
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30%;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-positive {
+  color: var(--green-80v);
+  background-color: var(--green-10v);
+  font-size: auto;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-negative {
+  color: var(--red-80v);
+  background-color: var(--red-10v);
+  font-size: auto;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
